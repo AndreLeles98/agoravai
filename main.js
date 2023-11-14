@@ -5,11 +5,13 @@ const loader = new THREE.GLTFLoader();
 
 function start(){
 	scene = new THREE.Scene();
-	scene.background = new THREE.Color(0xFFFF00);
+	scene.background = new THREE.Color(0xFFFFFF);
 	
 	camera = new THREE.PerspectiveCamera(40, window.innerWidth/window.innerHeight, 1, 5000);
 	camera.rotation.y = 45/180*Math.PI;
-	camera.position.x = 800;
+	camera.position.x = 400;
+	camera.position.y = 50;
+	camera.position.z = 500;
 	scene.add(camera);
 	
 	
